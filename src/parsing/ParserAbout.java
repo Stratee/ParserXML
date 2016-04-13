@@ -1,0 +1,47 @@
+package parsing;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+
+public class ParserAbout extends JFrame{
+	
+	JTextArea win;
+	eHandler handler = new eHandler();
+	JButton next = new JButton("Далее");
+	
+	public ParserAbout (String s) {
+		super(s);
+		setLayout(new FlowLayout());		
+		next.addActionListener(handler);
+		win = new JTextArea("Приветствие потенциальному работодателю!\n "
+				+ "\n"
+				+ "Вашему вниманию представляется парсер с возможностью \n"
+				+ "выбора конкретного xml файла. Пробный проект. \n"
+				+ "Не структурирует, без валидации. Читает \"Cp1251\" \n"
+				+ "При сочтении этого достаточным для приглашения на \n"
+				+ "собеседование или же для выдачи тестового задания  \n"
+				+ "прилагаю e-mail. \n"
+				+ "\n"
+				+ "juniorforjob@yandex.ru "
+				+ "\n");
+		win.setEditable(false);
+		add(win);
+		add(next);
+		
+	}
+
+	public class eHandler implements ActionListener{
+		public void actionPerformed(ActionEvent e) {
+			if(e.getSource()==next){
+				dispose();
+				Parser.parsing();
+			}
+		}
+	}
+}
