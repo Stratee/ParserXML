@@ -18,7 +18,7 @@ public class Err extends JFrame {
 	public Err (String s){
 	super(s);
 	setLayout(new FlowLayout());
-	l = new JLabel("Выберите XML файл!");
+	l = new JLabel("Р’С‹Р±РµСЂРёС‚Рµ XML С„Р°Р№Р»!");
 	b = new JButton("OK");
 	b.addActionListener(handler);
 	add(l);	

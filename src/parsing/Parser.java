@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
 public class Parser {
 	
 	public static void main(String[] args) {
-		ParserAbout gui = new ParserAbout("XML-парсер");
+		ParserAbout gui = new ParserAbout("XML-РџР°СЂСЃРµСЂ");
 		gui.setVisible(true);
 		gui.setSize(360, 245);
 		gui.setResizable(false);
@@ -28,7 +28,7 @@ public class Parser {
 	public static void parsing(){
 		Err error = new Err("");
 		JFileChooser fileopen = new JFileChooser();
-		int ret = fileopen.showDialog(null, "Открыть файл");
+		int ret = fileopen.showDialog(null, "РћС‚РєСЂС‹С‚СЊ С„Р°Р№Р»");
 		
 //Filter file extension
 		
