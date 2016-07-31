@@ -13,7 +13,7 @@ public class ParserAbout extends JFrame{
 	
 	JTextArea win;
 	eHandler handler = new eHandler();
-	JButton next = new JButton("�����");
+	JButton next = new JButton("Далее");
 	
 	public ParserAbout (String s) {
 		super(s);
