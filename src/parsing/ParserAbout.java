@@ -19,16 +19,8 @@ public class ParserAbout extends JFrame{
 		super(s);
 		setLayout(new FlowLayout());		
 		next.addActionListener(handler);
-		win = new JTextArea("����������� �������������� ������������!\n "
-				+ "\n"
-				+ "������ �������� �������������� ������ � ������������ \n"
-				+ "������ ����������� xml �����. ������� ������. \n"
-				+ "�� �������������, ��� ���������. ������ \"\" \n"
-				+ "��� �������� ����� ����������� ��� ����������� �� \n"
-				+ "������������� ��� �� ��� ������ ��������� �������  \n"
-				+ "�������� e-mail. \n"
-				+ "\n"
-				+ ""
+		win = new JTextArea("Кодировки: " + "\n"
+				+ "Форматы: "
 				+ "\n");
 		win.setEditable(false);
 		add(win);
